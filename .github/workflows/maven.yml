@@ -23,3 +23,5 @@ jobs:
       run: mvn -B verify --file pom.xml
     - name: Codecov
       uses: codecov/codecov-action@v2
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
